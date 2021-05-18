@@ -27,7 +27,7 @@ System.out.println(annee);
 ```java
         System.out.println("Veuillez entrer une année");
         Scanner sc = new Scanner(System.in);
-        int annee = sc.nextInt(); // Quand je tape 32 ENTER le scanner reçoit "32\n" .
+        int annee = sc.nextInt();
         System.out.println(annee);
 ```
 
@@ -120,7 +120,7 @@ do{
 
 ## Suite
 
-![Tableaux et collections](./tableauEtCollections.md)
+- [Tableaux et collections](https://github.com/marieThielens/resumeJava/blob/master/tableauxEtCollecetions.md)
 
 
 
