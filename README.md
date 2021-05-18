@@ -14,7 +14,7 @@ double c = a / double b; // => 2.5  C'est du casting ( conversion d'une valeur d
 - final int NOM_CONSTANTE = 340; ( une constante )
 - float = 245.28; (nombre décimal moins précis que double. Float ne dépasse pas les 7 chiffres après la virgule )
 
-##Lecture saisie utilisateur et afficher message de type String
+## Lecture saisie utilisateur et afficher message de type String
 
 ```java
 System.out.println("Veuillez entrer votre nom");
@@ -22,17 +22,17 @@ Scanner sc = new Scanner(System.in); // System.in : flux d'en trée de la consol
 String nom = sc.nextLine(); // nextLine récupère le contenu. Si j'avais écris un entier dedans; Ex : 32 ENTER le scanner reçoit "32\n" . 
 System.out.println(annee);
 ```
-##Lecture saisie utilisateur et afficher message de type int
+## Lecture saisie utilisateur et afficher message de type int
 
 ```java
-        System.out.println("Veuillez entrer une année");
-        Scanner sc = new Scanner(System.in);
-        int annee = sc.nextInt();
-        System.out.println(annee);
+System.out.println("Veuillez entrer une année");
+Scanner sc = new Scanner(System.in);
+int annee = sc.nextInt();
+System.out.println(annee);
 ```
 
-## Conversion
-
+## Conversion de type (cast)
+ 
 **String**
 ```java
       int a =Integer.parseInt("9"); // integer en chiffre => 9
