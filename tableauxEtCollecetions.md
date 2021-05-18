@@ -166,4 +166,33 @@ Toutes les clés d'un dictionnaire doivent être uniques, tout comme une seule p
 `personnes.remove("A remplacer");` => Y a plus de nullos
 
 #### Taille de mon dictionnaire
-`personnes.size();`-
+`personnes.size();`
+
+#### Parcourir un dictionnaire
+
+##### Récupérer les clés avec keySet()
+```java
+for (String i : personnes.keySet()) {
+    System.out.print(i + " / ");
+} // => A remplacer / moi / Et tout ceux qui le veulent / toi / 
+```
+
+##### Récupérer les valeurs avec values()
+```java
+for (String i : personnes.values()) {
+    System.out.print(i + " / ");
+} // => Fantomas / Marie / Les autres / Jojo / 
+```
+
+##### Les deux
+
+```java
+for (String i : personnes.keySet()) {
+    System.out.println("clé: " + i + " valeur: " + personnes.get(i));
+}
+/* =>
+clé: A remplacer valeur: Fantomas
+clé: moi valeur: Marie
+clé: Et tout ceux qui le veulent valeur: Les autres
+clé: toi valeur: Jojo */
+```
