@@ -1,7 +1,5 @@
 # resumeJava
 
-# resume java perso
-
 **Type de variable**
 - int = 500; (nombre entier)
 - double = 12.2; (nombre décimaux)
