@@ -31,7 +31,7 @@ System.out.println(annee);
         System.out.println(annee);
 ```
 
-##Conversion
+## Conversion
 
 **String**
 ```java
@@ -47,13 +47,76 @@ int chiffre = 123;
 String s = String.valueOf(chiffre); // valueOf est une méthode qui converti différents type de valeur en string
 ```
 
-##StringFormat() - Mise en forme du texte
+## StringFormat() - Mise en forme du texte
 ```java
 String nom = "toi";
 String phrase = String.format(" Bonjour %s", nom);
 System.out.println(phrase); // => Bonjour toi
 ```
 
+## Conditions
+
+
+### switch
+```java
+int weekEnd = 3;
+switch (weekEnd) {
+case 1:
+      System.out.println("Samedi");
+      break;
+case 2:
+      System.out.println("Dimanche");
+      break;
+default:
+      System.out.println("Le week-end est fini");
+}
+// => retoune Le week-end est fini 
+```
+
+### if ternaire
+
+```java
+int heure = 20;
+String result = (heure < 18) ? "Bonne journée." : "Bonne soirée.";
+System.out.println(result);
+// => Bonne soirée
+```
+## Boucles
+
+### if
+```java
+int heure = 22;
+if (heure < 10) { System.out.println("Bonne matinée."); } 
+else if (heure < 20) { System.out.println("Bonne journee."); } 
+else {System.out.println("Bonne soirée.");
+} 
+// => Bonne soirée
+```
+### for
+
+```java
+for( int i=1; i <= 10; i++) {
+      System.out.println(i); // => compte de 1 à 10
+}
+```
+
+### while
+
+```java
+int i=1;
+while(i<=10) {
+      System.out.println(i++); // compte de 1 à 10
+}
+```
+
+### Do .. while ( faire tant que )
+```java
+int i=1;
+do{
+    System.out.println(i);
+    i++;
+}while (i <= 10);
+```
 
 
 
