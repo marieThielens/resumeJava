@@ -88,18 +88,82 @@ System.out.println(personnes);
 #### Supprimer tous les éléments
 `personne.clear();`
 
+#### Copier une liste
+
 #### Parcourir une liste
 Plusieurs solutions :
 ```java
-// 1. 
+// 1. for each
 for (String element : personnes) {
     System.out.print(element + " / ");
 } // => Je veux être devant / toi / moi / Et tout ceux qui le veulent / 
 
-//2. 
+// 2. for
 for(int i=0; i<personnes.size(); i++) {
     System.out.print(personnes.get(i) + " / ");
 }
+// 3. Iterator version 1 
+for(Iterator element = personnes.iterator(); element.hasNext();) { // iterator() permet d'obtenir un iterateur
+    System.out.print(element.next() + " / "); // next() : affiche l'élément suivant
+}
+// 4. Iterator version 2 ( boucle while)
+Iterator<String> it = personnes.iterator();
+System.out.println(it.next()); // Affiche le premier
+while(it.hasNext()) { // boucle pour tout afficher
+    System.out.print(it.next() + " / ");
+}
+```
+#### Supprimer des éléments d'une collection
+Exemple : utiliser un itérateur pour supprimer une personne, un element d'une collection:
+
+```java
+Iterator element = personnes.iterator(); // obtenir un itérateur
+String str = ""; // initialiser ma chaine de caractère
+while (element.hasNext()) { //
+    str= (String) element.next();  // je spécifie que c'est une string sinon ce serait un objet. L'élément suivant
+    if (str.equals("moi")) { // Si ma chaine = moi
+        element.remove(); // alors j'enlève l'élément
+        break; // et je sors de ma boucle
+    }
+}
+// Afficher mon tableau
+for(String elementListe : personnes) {
+    System.out.print(elementListe + " / ");
+}
+```
+### ArrayList
+
+`ArrayList<String> personnes = new ArrayList<String>();`
+
+##### Connaitre le type d'une liste
+`System.out.println(personnes.getClass());` => class java.util.ArrayList
+
+##### POur le reste tout pareil à la liste
+
+### Maps , les dictionnaires
+
+Un dictionnaire est une liste d'éléments organisés en fonction d'une clé. Cette clé est un terme spécifique que vous recherchez pour trouver sa définition ou sa valeur. C'est ce qu'on appelle une association "Clé <> Valeur".
+Toutes les clés d'un dictionnaire doivent être uniques, tout comme une seule personne ne peut s'asseoir que sur une chaise à la fois.
+
+```java
+        //   <typeDeCle, TypeDeValeur>          typeDeDictionnaire
+        HashMap<String, String> personnes = new HashMap<String, String>();
+        
+        // Ajouter des éléments. Cle , valeur
+        personnes.put("toi", "Jojo");
+        personnes.put("moi", "Marie");
+        personnes.put("Et tout ceux qui leveulent", "Les autres");
+        personnes.put("A remplacer", "Fantomas");
+
+        // Récupérer ma valaur depuis sa clé
+        System.out.println(personnes.get("Et tout ceux qui le veulent")); // => Les autres
 ```
 
-#### Copier une liste
+#### Modifier
+`personnes.put("A remplacer", "Nullos");`  =>  Clé = A remplacer, valeur = Nullos
+
+#### Supprimer
+`personnes.remove("A remplacer");` => Y a plus de nullos
+
+#### Taille de mon dictionnaire
+`personnes.size();`-
