@@ -196,3 +196,5 @@ clé: moi valeur: Marie
 clé: Et tout ceux qui le veulent valeur: Les autres
 clé: toi valeur: Jojo */
 ```
+
+Voir la suite : [Etapes à suivre]https://github.com/marieThielens/resumeJava/blob/master/EtapeASuivre.md()
