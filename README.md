@@ -1,5 +1,16 @@
 # resumeJava
 
+- Installer l'IDE **intelliJ** qui va permettre de compiler votre code. Un très bon assistant pour votre code.
+
+## Nouveau projet sur intelliJ
+
+- Files > New Project > Next > cocher Create Projet from template > Donner un nom à votre projet > Finish
+
+Comme vous avez crée un projet depuis un template vous aurez des dossiers avec votre classe Main
+
+<img src="./img/DossierBase.PNG">
+
+
 **Type de variable**
 - int = 500; (nombre entier)
 - double = 12.2; (nombre décimaux)
@@ -117,10 +128,5 @@ do{
     i++;
 }while (i <= 10);
 ```
-
-## Suite
-
-- [Tableaux et collections](https://github.com/marieThielens/resumeJava/blob/master/tableauxEtCollecetions.md)
-- [Etapes à suivre]https://github.com/marieThielens/resumeJava/blob/master/EtapeASuivre.md()
 
 
