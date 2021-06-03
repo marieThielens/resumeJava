@@ -82,3 +82,5 @@ public abstract class Poisson implements Ipoisson {
 }
 ```
 
+A finir...
+
